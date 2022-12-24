@@ -6,9 +6,6 @@ public class Exam_10809 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String [] arr = sc.next().split("");
-        //b,a,e
-
-        boolean flag = true;
 
         for (char i='a'; i<='z'; i++){
             System.out.print(num(i,arr) + " ");
