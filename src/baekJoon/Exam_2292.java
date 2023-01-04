@@ -7,28 +7,23 @@ public class Exam_2292 {
         Scanner sc = new Scanner(System.in);
 
         int num = sc.nextInt();
-        int firstNum = 1;
-        int lastNum  = 1;
-        int result = 0;
+        int count = 1;
+        int range = 2;
 
-        for (int i=1; i<=num; i++){
-            int num1 = i*6;
-            int num2 = (i-1) * 6;
-            if (firstNum <=num && num <= lastNum){
-
-                result = i;
-                break;
+        if (num == 1){
+            System.out.println(1);
+        }else {
+            while (range <= num){
+                range = range + (count*6);
+                count++;
             }
-            lastNum = lastNum + num1;
-
-            if (i == 1){
-                firstNum++;
-            }else
-                firstNum += num2;
-
+            System.out.println(count);
 
         }
 
-        System.out.println(result);
+
+
+
+
     }
 }
